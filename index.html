@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Prova Javascript</title>
+    <style>
+        .bottone{
+            padding: 20px;
+            border: 3px black solid;
+            background-color: bisque;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello</h1>
     <h3>Daniele</h3>
     <h4>Ciao</h4>
 
-    
+    <button class="bottone">Salutami</button>
     <SCRIPT>
         let somma=5+5; //variabile
         let array=[5,200,1,-5]; //array
-        let potenza =50**2; 
+        let potenza = 50**2; 
         console.log('potenza: '+ potenza); //wow!!!
         console.log(somma.toFixed(2)); //wow!!!
         console.log(array[1]);
@@ -33,15 +41,17 @@
             coloriPreferiti: ['nero','rosso', 'giallo']
 
         };
+        console.log("<<<Io sono "+persona.nome+">>>");
         let x='6';
         let y=5;
         console.log(x != y);
         
-        let nome = 'Luca'
+        let nome = 'Daniele'
         let testo = "Ciao sono " + nome;
         console.log(testo);
+
         let elemento = `<h1>${testo}</h1>`;
-        document.body.innerHTML = elemento;
+       // document.body.innerHTML = elemento;
         console.log(elemento);
 
         //metodi da usare su una stringa
@@ -62,18 +72,42 @@
             ); //for each
             console.log("\n\n" + citta.join(" - ")); // Roma - Milano - Napoli - Venezia
             
-            let a=0;
-            do{
-                switch(a){
-                    case 1: print();
-                    
-                }
+            let a=20;
+            if(a!=='30'){
+                console.log("\nSi. è identico"); }
 
-            }
+                else {console.log("No. è divero");}
 
-            while(a!=0);{
-
-            };
     </SCRIPT>
+
+    <script>
+        console.log("\n\nFUNZIONI:\n\n");
+
+        function ciao(){
+            console.log("Bentornato "+ persona.nome + " " + persona.cognome);
+            
+        };
+        ciao();
+        
+        const myButtone = document.querySelector('button')
+        myButtone.onclick = function(){
+            alert('VIRUS! VIRUS! VIRUS!\nVIRUS! VIRUS!\nVIRUS!');
+        };
+
+        function ciao(){
+            let saluta='ciao';
+            return saluta;
+        }
+        function Ciao(name){
+            if (name=='Daniele'){
+            console.log('ciao ',name);
+            }else {console.log('ciao chiunque tu sia');}
+        };
+        console.log(ciao()," ");
+        Ciao("Daniele");
+
+
+
+    </script>
 </body>
 </html>
