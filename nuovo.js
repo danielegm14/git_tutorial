@@ -4,3 +4,6 @@ let y=5;
 let somma= x*y;
 console.log('La somma è: ' + somma);
 
+function Saluti(){
+    return "Ciaooooooo";
+};

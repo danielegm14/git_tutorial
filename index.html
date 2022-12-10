@@ -90,22 +90,24 @@
         ciao();
         
         const myButtone = document.querySelector('button')
-        myButtone.onclick = function(){
+        myButtone.onmouseover = function(){
             alert('VIRUS! VIRUS! VIRUS!\nVIRUS! VIRUS!\nVIRUS!');
+            
         };
 
         function ciao(){
             let saluta='ciao';
             return saluta;
         }
-        function Ciao(name){
+        function Ciao(name, surName){
             if (name=='Daniele'){
-            console.log('ciao ',name);
+            console.log('ciao ',name, ' ', surName);
             }else {console.log('ciao chiunque tu sia');}
         };
         console.log(ciao()," ");
-        Ciao("Daniele");
+        Ciao("Daniele", "Mercuri");
 
+        console.log(this.Saluti());
 
 
     </script>
