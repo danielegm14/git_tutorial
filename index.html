@@ -11,10 +11,69 @@
     <h1>Hello</h1>
     <h3>Daniele</h3>
     <h4>Ciao</h4>
-    <SCRIPT>
-        let somma=5*5;
-        console.log(somma);
 
+    
+    <SCRIPT>
+        let somma=5+5; //variabile
+        let array=[5,200,1,-5]; //array
+        let potenza =50**2; 
+        console.log('potenza: '+ potenza); //wow!!!
+        console.log(somma.toFixed(2)); //wow!!!
+        console.log(array[1]);
+        //cast
+        let numero='5'; //questa è una string..
+        console.log(Number(numero)+potenza);
+
+        let persona = { //oggetto
+            nome:'Daniele', 
+            cognome: 'Mercuri',
+            codiceFiscale:'MRCDNL87T01D773S',
+            cittaNascita: 'Frascati',
+            eta: 35,
+            coloriPreferiti: ['nero','rosso', 'giallo']
+
+        };
+        let x='6';
+        let y=5;
+        console.log(x != y);
+        
+        let nome = 'Luca'
+        let testo = "Ciao sono " + nome;
+        console.log(testo);
+        let elemento = `<h1>${testo}</h1>`;
+        document.body.innerHTML = elemento;
+        console.log(elemento);
+
+        //metodi da usare su una stringa
+        let stringa ="metodi da usare su una stringa";
+        console.log(stringa.toUpperCase());
+
+        console.log("\nARRAY\n\n");
+        //array
+        let citta = ["Roma", "Milano", "Napoli", "Venezia"];
+        for(let i=0; i<citta.length; i++){ //for loop
+            console.log(citta[i]);
+        }
+        citta.push("Firenze"); //aggiunge un elemento in coda
+        citta.pop(); //rimuove elemento dalla coda
+
+        citta.forEach(function(number){
+            console.log(number)}
+            ); //for each
+            console.log("\n\n" + citta.join(" - ")); // Roma - Milano - Napoli - Venezia
+            
+            let a=0;
+            do{
+                switch(a){
+                    case 1: print();
+                    
+                }
+
+            }
+
+            while(a!=0);{
+
+            };
     </SCRIPT>
 </body>
 </html>
