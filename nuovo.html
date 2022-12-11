@@ -8,13 +8,26 @@
 </head>
 <body>
     <button>Saluta!</button>
-    <h1>Nessun saluto</h1>
-    <script>
- //       const myButton = document.querySelectorAll('button');
+    <input type="text" name="nome" placeholder="nome persona">
+    <h1></h1>
+
+    <script>        
+        let button = document.querySelector('button');
+        let title = document.querySelector('h1');
+        let nome = document.querySelector('input');
+       
+       
+        function saluta(name){
+            if(name==!KeyboardEvent){ title.innerHTML = `Ciao chiunque tu sia`;
+            }else{title.innerHTML = `Ciao ${name}`;}
+            
+        };
+
+        button.addEventListener('click', ()=>{
+            saluta(nome.value);
+        });
         
-        let button = document.querySelectorAll("button");
-        let title = document.querySelectorAll("h1");
-        
+
     </script>
     
 </body>
