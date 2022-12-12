@@ -7,3 +7,8 @@ console.log('La somma è: ' + somma);
 function Saluti(){
     return "Ciaooooooo";
 };
+let saluti =(name, surName, codFiscal)=>{
+    nome = name,
+    cognome = surName,
+    codFiscale = codFiscal
+};
