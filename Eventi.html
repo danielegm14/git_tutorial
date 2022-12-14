@@ -9,17 +9,26 @@
 </head>
 <body>
     <label>Nome</label>
-    <input id="name" placeholder="Inserisci Nome" type="text" name="nome">
+    <input id="nome" placeholder="Inserisci Nome" type="text" name="nome">
     <label>Cognome</label>
-    <input id="surName" placeholder="Inserisci Cognome" type="text" name="cognome">
+    <input id="cognome" placeholder="Inserisci Cognome" type="text" name="cognome">
     <label>Codice Fiscale</label>
-    <input id="fiscalCod" placeholder="Inserisci Codice Fiscale" type="text" name="codice_fiscale">
+    <input id="codFiscale" placeholder="Inserisci Codice Fiscale" type="text" name="codice_fiscale">
     <br><br><br>
     <button id="buttSaluta">Saluta</button>
     <br><br>
     <h1 id="saluti"><<<.........>>></h1>
 
     <script>
+        let name = document.querySelector('input', nome);
+        let surName = document.querySelector('input', cognome);
+        let fiscalCod = document.querySelector('input', codFiscale);
+        let button = document.querySelector('button', buttSaluta);
+        
+        function saluta(){
+            
+        }
+
         saluta();
 
     </script>

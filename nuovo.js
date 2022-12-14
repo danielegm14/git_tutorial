@@ -12,3 +12,9 @@ let saluti =(name, surName, codFiscal)=>{
     cognome = surName,
     codFiscale = codFiscal
 };
+function ciao(params) {
+    setTimeout(() => {
+    alert('ciaoooo');
+}, 2000);
+};
+

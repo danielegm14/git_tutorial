@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="nuovo.js">
+        
+    </script>
 </head>
 <body>
-    <button>Saluta!</button>
+    <button id="bottone">Saluta!</button>
     <input type="text" name="nome" placeholder="nome persona">
     <h1></h1>
-
+    
+    <h2>Giulia</h2>
+    <h2>Daniele</h2>
     <script>        
-        let button = document.querySelector('button');
+        let button = document.querySelector('button', bottone);
+
         let title = document.querySelector('h1');
         let nome = document.querySelector('input');
        
        
         function saluta(name){
-            if(name==!KeyboardEvent){ title.innerHTML = `Ciao chiunque tu sia`;
-            }else{title.innerHTML = `Ciao ${name}`;}
+           /* if(name==!KeyboardEvent){ title.innerHTML = `Ciao chiunque tu sia`;
+            }else{title.innerHTML = `Ciao ${name}`;}*/
+            title.innerHTML = `Ciao ${name}`;
             
         };
+        button.addEventListener('click',()=>{
+            saluta(nome.value)
+        })
+        button.addEventListener('click',);
+        ciao();
 
-        button.addEventListener('click', saluta(nome.value));
+   //     button.addEventListener('')
+
+        
 
         
         
